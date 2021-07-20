@@ -1,0 +1,49 @@
+{%extends 'main/base.html' %}
+
+{% block body %}
+{% include 'main/nav.html' %}
+<div class="container">
+    <h1 class="center-align">HOME PAGE</h1>
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card blue-grey lighten-1">
+                <br>
+                <div class="container white-text">
+                    <img class="materialboxed responsive img" width="250"
+                        src="https://media-exp3.licdn.com/dms/image/C5603AQFNCcQzb6R0Qg/profile-displayphoto-shrink_400_400/0/1624288634050?e=1631750400&v=beta&t=wQ6xl5tkVb16qljQSaW1hITqKBf_F8P_eAUDexA3V90">
+                        <span class="card-title">Satwik Mishra</span>               
+                    </div>
+                <div class="card-action">
+                    <a href="https://github.com/TheSatwikMishra" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/satwik-mishra-3920721b6" target="_blank">LinkedIn</a>
+                    <a href="https://www.codechef.com/users/satwik_2000" target="_blank">Codechef</a>
+                    <a href="https://codeforces.com/profile/Satwik_Mishra1" target="_blank">Codeforces</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m8">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">About Me</span>
+               <p>I am A learning individual with a knack of competitve programming and hand on experience in python development too.
+                   I am a third year undergrad at IIIT Bhagalpur,Currently working as a Software Developer Intern at Pairbytes Softwares.
+               </p>
+              </div>
+              <div class="card-action">
+               
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
+{%block script%}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);});
+</script>
+{% endblock %}

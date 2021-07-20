@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+
+{%block body%}
+{% include 'main/nav.html' %}
+<div class="container">
+    <h1 class="center-align">PROJECTS</h1>
+    
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">My Favourite Projects</span>
+                            <p>These are some of my favourite projects,They are majorly based on python development and
+                                Machine Learning</p>
+                        </div>
+                        <div class="card-action">
+                        </div>
+                    </div>
+        </div>
+        <div class="col s12 m6">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Fake News Detection</div>
+                  <div class="collapsible-body"><span>This Project uses Machine Learning Algorithms to detect the authenticity of textual claims.Integrating this with apps like Whats App to save World from senseless and threatning rumors is ou next goal.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Music-Utils</div>
+                  <div class="collapsible-body"><span>If you are someone who struggles finding music of your taste,Music-Utils is always there for you,just enter your specifications and then Music-Utils will do the rest,it uses advance Machine Learning Algorithms to predict what your music taste would be,the response for this webapp has been tremendous.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Chatlist(LRU-Cache)</div>
+                  <div class="collapsible-body"><span>The basic motivation behind this project was to understand how the chatting apps like Whatsapp make their chatlist,How do the new contacts appear and the old ones vanish off,All this is done by the virtue of this Awesome Data Structure LRU Cache,Javascript,HTML,CSS were also used to beautify the look of our chatlist.</span></div>
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{%block scripts%}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+{% endblock %}
